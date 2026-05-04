@@ -9,7 +9,7 @@ export function buildLoaders() {
   const babelLoader = {
     test: /\.js$/,
     use: 'babel-loader',
-    exclude: '/node_modules/',
+    exclude: /node_modules/,
   };
 
   const fileLoader = {
